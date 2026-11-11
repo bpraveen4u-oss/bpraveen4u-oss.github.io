@@ -79,8 +79,8 @@
       gap: 48px;
     }
     .hero-content { grid-area: content; }
+    .profile-block { grid-area: portrait; justify-self: center; }
     .profile-photo {
-      grid-area: portrait;
       display: block;
       width: 220px;
       height: 220px;
@@ -89,6 +89,10 @@
       border-radius: 24px;
       box-shadow: 0 18px 50px rgb(0 0 0 / 25%);
     }
+    .hero-meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 18px; color: #d8e0ee; font-size: .9rem; }
+    .hero-meta a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid rgb(255 255 255 / 28%); border-radius: 999px; }
+    .hero-meta a:hover { color: white; background: rgb(255 255 255 / 9%); }
+    .hero-meta svg { width: 18px; height: 18px; fill: currentColor; }
     .eyebrow { color: #a9c0e8; text-transform: uppercase; letter-spacing: .16em; font-size: .76rem; font-weight: 750; }
     h1 { margin: 16px 0 12px; font-size: clamp(2.7rem, 6vw, 4.8rem); letter-spacing: -.055em; line-height: 1.05; }
     .hero-title { margin: 0 0 22px; color: #c5d4ed; font-size: clamp(1.15rem, 2.5vw, 1.55rem); font-weight: 550; }
@@ -100,10 +104,6 @@
     .button-primary:hover { color: #142238; background: #eaf0fa; }
     .button-secondary { color: white; border: 1px solid rgb(255 255 255 / 35%); }
     .button-secondary:hover { color: white; background: rgb(255 255 255 / 9%); }
-    .hero-meta { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 38px; color: #c0ccdd; font-size: .9rem; }
-    .hero-meta a { border-bottom: 1px solid rgb(255 255 255 / 30%); }
-    .hero-meta a:hover { color: white; }
-
     section { padding: 84px 0; }
     .section-heading { max-width: 700px; margin-bottom: 34px; }
     .kicker { color: var(--blue); text-transform: uppercase; letter-spacing: .15em; font-size: .74rem; font-weight: 800; }
@@ -196,12 +196,20 @@
               <a class="button button-primary" href="#experience">Explore Experience <span aria-hidden="true">-&gt;</span></a>
               <a class="button button-secondary" href="#about">About Me</a>
             </div>
-            <div class="hero-meta" aria-label="Social profiles">
-              <a href="https://www.linkedin.com/in/bpraveen4u/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">-&gt;</span></a>
-              <a href="https://github.com/bpraveen4u-oss" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">-&gt;</span></a>
-            </div>
           </div>
-          <img class="profile-photo" src="assets/linkedinPic.jpg" alt="Portrait of Praveen Bonakurthi" width="400" height="400" fetchpriority="high">
+          <div class="profile-block">
+            <img class="profile-photo" src="assets/linkedinPic.jpg" alt="Portrait of Praveen Bonakurthi" width="400" height="400" fetchpriority="high">
+            <nav class="hero-meta" aria-label="Social profiles">
+              <a href="https://www.linkedin.com/in/bpraveen4u/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.352V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124ZM7.119 20.452H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/bpraveen4u-oss" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297a12 12 0 0 0-3.793 23.385c.6.111.82-.261.82-.577v-2.234c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.305.762-1.604-2.665-.304-5.466-1.332-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 6.01 0c2.291-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.233 1.91 1.233 3.221 0 4.61-2.804 5.624-5.475 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.216.694.825.576A12.001 12.001 0 0 0 12 .297Z"/></svg>
+                GitHub
+              </a>
+            </nav>
+          </div>
         </div>
       </div>
     </section>
