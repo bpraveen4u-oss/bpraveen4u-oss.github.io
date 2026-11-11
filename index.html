@@ -126,6 +126,14 @@
     .card p { margin: 0; color: var(--muted); font-size: .93rem; }
     .card-link { display: inline-block; margin-top: auto; padding-top: 16px; color: #365b99; font-size: .9rem; font-weight: 700; }
     .card-link:hover { color: var(--navy); }
+    .case-study { padding: clamp(24px, 5vw, 42px); background: white; border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); }
+    .case-study-label { margin: 0 0 10px; color: var(--blue); text-transform: uppercase; letter-spacing: .14em; font-size: .74rem; font-weight: 800; }
+    .case-study h3 { margin: 0 0 14px; color: var(--navy); font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.035em; line-height: 1.2; }
+    .case-study p { max-width: 860px; margin: 0 0 16px; color: #526176; }
+    .case-study h4 { margin: 28px 0 10px; color: var(--navy); font-size: 1rem; }
+    .case-study-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; margin: 0; padding-left: 20px; color: #526176; }
+    .case-study-list li { padding-left: 3px; }
+    .case-study .tag-list { margin-top: 24px; }
     .tag-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 25px; }
     .tag { padding: 7px 12px; color: #43536a; background: white; border: 1px solid #dfe5ee; border-radius: 999px; font-size: .82rem; font-weight: 650; }
 
@@ -152,6 +160,7 @@
       .hero-layout { grid-template-areas: "portrait" "content"; grid-template-columns: 1fr; gap: 28px; }
       .profile-photo { width: 164px; height: 164px; }
       .expertise-grid { grid-template-columns: repeat(2, 1fr); }
+      .case-study-list { grid-template-columns: 1fr; }
       .contact-panel { align-items: flex-start; flex-direction: column; padding: 34px; }
     }
     @media (max-width: 560px) {
@@ -175,6 +184,7 @@
       <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#experience">Experience</a>
         <a class="nav-cta" href="#contact">Contact</a>
       </nav>
@@ -328,6 +338,40 @@
           <span class="tag">System Design</span>
           <span class="tag">Engineering Leadership</span>
         </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <div class="kicker">Selected Work</div>
+          <h2>Skill Advisor Agent.</h2>
+          <p class="section-intro">AI-powered onboarding, skilling, and in-the-flow coaching for technical support engineers.</p>
+        </div>
+        <article class="case-study">
+          <p class="case-study-label">Agent design · MCP tools · Product updates</p>
+          <h3>From skill discovery to guidance in the flow of work.</h3>
+          <p>
+            I designed and delivered the Skill Advisor Agent, an AI-powered experience that helps
+            technical support engineers across global sites onboard, build skills, and learn in the
+            flow of work. It helped new team members onboard and begin handling support tickets in
+            two weeks, compared with a traditional two-month ramp-up. Published to the Microsoft
+            Enterprise Agent Store, the agent was evaluated using agent Evals against key priority
+            scenarios; I refined its instructions to achieve 85% response consistency. I also built
+            the Product Updates capability, including MCP tools, a dedicated service aligned with
+            Microsoft's Secure Future Initiative, and a rich in-agent experience using the MCP Apps
+            SDK to surface recent and upcoming product updates. I partnered with Product Management,
+            business, PMO, and engineering to deliver the solution.
+          </p>
+          <div class="tag-list" aria-label="Skill Advisor technologies and focus areas">
+            <span class="tag">Declarative Agents</span>
+            <span class="tag">Microsoft Copilot Studio</span>
+            <span class="tag">MCP Tools</span>
+            <span class="tag">MCP Apps SDK</span>
+            <span class="tag">Microsoft Teams</span>
+            <span class="tag">Product Updates</span>
+          </div>
+        </article>
       </div>
     </section>
 
