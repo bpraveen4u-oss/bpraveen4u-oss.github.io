@@ -127,6 +127,7 @@
     .card-link { display: inline-block; margin-top: auto; padding-top: 16px; color: #365b99; font-size: .9rem; font-weight: 700; }
     .card-link:hover { color: var(--navy); }
     .case-study { padding: clamp(24px, 5vw, 42px); background: white; border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); }
+    .case-study + .case-study { margin-top: 24px; }
     .case-study-label { margin: 0 0 10px; color: var(--blue); text-transform: uppercase; letter-spacing: .14em; font-size: .74rem; font-weight: 800; }
     .case-study h3 { margin: 0 0 14px; color: var(--navy); font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.035em; line-height: 1.2; }
     .case-study p { max-width: 860px; margin: 0 0 16px; color: #526176; }
@@ -345,8 +346,8 @@
       <div class="container">
         <div class="section-heading">
           <div class="kicker">Selected Work</div>
-          <h2>Customer Support Agent.</h2>
-          <p class="section-intro">Helping Microsoft technical support engineers onboard, find the latest product updates, and support customers with trusted information at their fingertips—just a prompt away.</p>
+          <h2>Enterprise projects.</h2>
+          <p class="section-intro">AI-powered customer support and cloud modernization for enterprise integration and analytics.</p>
         </div>
         <article class="case-study">
           <p class="case-study-label">Customer support · MCP tools · Product updates</p>
@@ -370,6 +371,45 @@
             <span class="tag">MCP Apps SDK</span>
             <span class="tag">Microsoft Teams</span>
             <span class="tag">Product Updates</span>
+          </div>
+        </article>
+        <article class="case-study">
+          <p class="case-study-label">Enterprise architecture · Azure · Data &amp; analytics</p>
+          <h3>Enterprise B2B Integration &amp; Intelligent Transaction Tracking</h3>
+          <p>
+            I architected and led an enterprise B2B integration platform, modernizing partner
+            onboarding from Microsoft BizTalk to Azure Integration Services while preserving
+            established provisioning workflows. Its event-driven, microservices architecture
+            enabled end-to-end tracking of purchase orders, acknowledgments, and invoices across
+            integration services and downstream systems such as SAP.
+          </p>
+          <p>
+            For partner connectivity, the platform supported AS2 point-to-point message exchange
+            over HTTP/HTTPS. AS2 carried a range of payloads, including EDI formats such as X12
+            and EDIFACT, as well as XML, JSON, and plain text. Messages could be encrypted with
+            the recipient's public key and digitally signed with the sender's private key to
+            provide confidentiality and verify authenticity.
+          </p>
+          <p>
+            To turn transaction data into insights, I designed a separate analytics pipeline using
+            Azure Data Lake, Data Factory, and Databricks to power Power BI reporting without
+            adding processing load to the operational platform. I also prepared historical data
+            for machine-learning-based Order-to-Invoice SLA prediction and implemented proactive
+            health monitoring and alerting for Azure Functions services.
+          </p>
+          <div class="tag-list" aria-label="Enterprise integration platform technologies">
+            <span class="tag">Microsoft BizTalk</span>
+            <span class="tag">AS2</span>
+            <span class="tag">Azure Integration Services</span>
+            <span class="tag">Azure Logic Apps</span>
+            <span class="tag">Azure Functions</span>
+            <span class="tag">Event Hubs</span>
+            <span class="tag">Cosmos DB</span>
+            <span class="tag">Azure AI Search</span>
+            <span class="tag">Data Factory</span>
+            <span class="tag">Databricks</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">SLA Prediction</span>
           </div>
         </article>
       </div>
