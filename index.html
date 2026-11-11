@@ -131,6 +131,7 @@
     .case-study-label { margin: 0 0 10px; color: var(--blue); text-transform: uppercase; letter-spacing: .14em; font-size: .74rem; font-weight: 800; }
     .case-study h3 { margin: 0 0 14px; color: var(--navy); font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.035em; line-height: 1.2; }
     .case-study p { max-width: 860px; margin: 0 0 16px; color: #526176; }
+    .case-study .case-study-subtitle { margin-bottom: 16px; color: var(--blue); font-size: 1.02rem; font-weight: 650; }
     .case-study h4 { margin: 28px 0 10px; color: var(--navy); font-size: 1rem; }
     .case-study-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; margin: 0; padding-left: 20px; color: #526176; }
     .case-study-list li { padding-left: 3px; }
@@ -145,6 +146,9 @@
     .timeline-item h3 { margin: 0; font-size: 1.13rem; }
     .timeline-meta { margin: 3px 0 9px; color: var(--blue); font-size: .88rem; font-weight: 700; }
     .timeline-item p { max-width: 780px; margin: 0; color: var(--muted); }
+    .timeline-subitem { margin: 18px 0 0 10px; padding-left: 18px; border-left: 2px solid #d9e2ef; }
+    .timeline-subitem h4 { margin: 0; color: var(--ink); font-size: 1rem; }
+    .timeline-subitem p { max-width: 780px; margin: 0; color: var(--muted); }
 
     .contact-panel { display: flex; justify-content: space-between; align-items: center; gap: 30px; padding: 48px; color: white; background: linear-gradient(120deg, #111d30, #203a5e); border-radius: 24px; }
     .contact-panel h2 { margin-top: 0; }
@@ -346,12 +350,13 @@
       <div class="container">
         <div class="section-heading">
           <div class="kicker">Selected Work</div>
-          <h2>Enterprise projects.</h2>
+          <h2>Featured projects.</h2>
           <p class="section-intro">AI-powered customer support, cloud integration, and reliability engineering for enterprise platforms.</p>
         </div>
         <article class="case-study">
           <p class="case-study-label">Customer support · MCP tools · Product updates</p>
-          <h3>Onboarding and product knowledge, just a prompt away.</h3>
+          <h3>Technical Support Agent</h3>
+          <p class="case-study-subtitle">Onboarding and product knowledge, just a prompt away.</p>
           <p>
             I designed and delivered this AI-powered agent to help Microsoft technical support
             engineers onboard, build skills, and find the latest product updates while supporting
@@ -457,8 +462,29 @@
           <article class="timeline-item">
             <span class="timeline-dot" aria-hidden="true"></span>
             <h3>Microsoft</h3>
-            <div class="timeline-meta">Software Engineering</div>
+            <div class="timeline-meta">Principal Software Engineer</div>
             <p>Worked on complex engineering challenges, including the Employee Self-Service agent's simplified Workday integration, alongside scalable software, distributed systems, and platforms.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <h3><a href="https://planful.com/" target="_blank" rel="noopener noreferrer">Planful</a></h3>
+            <div class="timeline-meta">Lead Software Engineer</div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <h3>Tata Consultancy Services</h3>
+            <div class="timeline-meta">Assistant Consultant</div>
+            <div class="timeline-subitem">
+              <h4>Belgacom (now Proximus), Belgium</h4>
+              <div class="timeline-meta">Client-site assignment · 3 years</div>
+              <p>
+                Contributed to the design and development of an enterprise PABX product-ordering
+                platform for configuring and ordering telecom solutions. Worked directly with
+                client stakeholders in Belgium to clarify requirements and translate them into
+                technical deliverables, coordinating with the offshore engineering team in India
+                to align implementation with business needs.
+              </p>
+            </div>
           </article>
         </div>
       </div>
