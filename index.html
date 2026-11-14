@@ -2,6 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function (window, document, script, layer, containerId) {
+      window[layer] = window[layer] || [];
+      window[layer].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var firstScript = document.getElementsByTagName(script)[0];
+      var gtmScript = document.createElement(script);
+      var layerParam = layer !== "dataLayer" ? "&l=" + layer : "";
+      gtmScript.async = true;
+      gtmScript.src = "https://www.googletagmanager.com/gtm.js?id=" + containerId + layerParam;
+      firstScript.parentNode.insertBefore(gtmScript, firstScript);
+    })(window, document, "script", "dataLayer", "GTM-NRB78FZ4");
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Praveen Bonakurthi — engineering leader working on Microsoft 365 Copilot Employee Self-Service, Workday integration, AI, cloud architecture, and distributed systems.">
   <meta name="theme-color" content="#101827">
@@ -183,6 +195,7 @@
   </style>
 </head>
 <body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRB78FZ4" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#home">Praveen <span>Bonakurthi</span></a>
@@ -204,7 +217,7 @@
           <div class="hero-content">
             <div class="eyebrow">Engineering Leadership · Architecture · AI</div>
             <h1>Praveen Bonakurthi</h1>
-            <p class="hero-title">Engineering Leader | Microsoft 365 Copilot Agent Builder | AI &amp; Cloud Architecture</p>
+            <p class="hero-title">Engineering Leader | Agentic AI & Enterprise Automation | Copilot Ecosystem | AI Security &amp; Governance</p>
             <p class="hero-copy">
               I build scalable software platforms and solve complex engineering problems.
               With extensive software engineering experience at Microsoft, I focus on
